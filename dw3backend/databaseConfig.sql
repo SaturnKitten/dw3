@@ -76,4 +76,3 @@ create table IF NOT EXISTS pedidos (
 insert into pedidos values 
  (default, 234, '2020-01-31', 6891.60, (SELECT clienteid from CLIENTES where codigo = 'CLI01'))
  ON CONFLICT DO NOTHING;
-
